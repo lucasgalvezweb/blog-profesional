@@ -1,9 +1,8 @@
-import mainLogoBlack from '../assets/icons/logo/200px/logo-lucasgalvezconsulting.png'
 import { global } from '../helpers/globalText'
 import { time } from '../helpers/helpful'
 import { appsMenuList, servicesList } from '../data'
-import { NavLink } from 'react-router-dom'
 import { useIntersectionAnimation } from '../hooks'
+import Link from 'next/link'
 
 export const Footer = () => {
 
@@ -15,7 +14,7 @@ export const Footer = () => {
         <section ref={ref} id='footer' className=' bg-white min-h-full xl:px-28 lg:px-16 pt-10 pb-14 md:pt-20 md:pb-14'>
             <div className={`container mx-auto px-4 md:px-0 pb-10 grid grid-cols-1 lg:grid-cols-4 text-left ${isVisible ? 'animate-fade-up' : ''} animate-duration-900`}>
                 <div className='mb-3 md:mb-0'>
-                    <img loading='lazy' src={mainLogoBlack} width="150" height="auto" alt="Logo principal" />
+                    <img loading='lazy' src='/assets/icons/logo/200px/logo-lucasgalvezconsulting.png' width="150" height="auto" alt="Logo principal" />
                 </div>
                 <div className='mb-3 md:mb-0'>
                     <h2 className='text-xl font-semibold'>Servicios</h2>
@@ -32,7 +31,7 @@ export const Footer = () => {
                     <ul className='text-sm pt-2 pl-2 pr-6'>
                         {
                             appsMenuList.map(({name, redirectTo, isInFooter}, index) => (
-                                <li key={index} className='my-1'><NavLink to={redirectTo}>{ isInFooter && name }</NavLink></li>
+                                <li key={index} className='my-1'><Link href={redirectTo}>{ isInFooter && name }</Link></li>
                             ))
                         }
                     </ul>

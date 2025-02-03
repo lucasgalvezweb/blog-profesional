@@ -1,7 +1,6 @@
 import React from 'react'
 import { global } from '../helpers/globalText'
 import { useIntersectionAnimation } from '../hooks'
-import profile from '../assets/images/picture-about-me.png'
 
 export const AboutMe = () => {
 
@@ -12,7 +11,7 @@ export const AboutMe = () => {
             <div className={`container mx-auto px-4 py-10 grid grid-cols-1 lg:grid-cols-2 text-left`}>
                 <div className='place-self-center'>
                     <div className={`${isVisible ? 'animate-fade-right' : ''} animate-duration-800`}>
-                        <img width="1000" height="auto" className='aspect-[4/3]' src={profile} alt="Profile picture" />
+                        <img width="1000" height="auto" className='aspect-[4/3]' src='../assets/images/picture-about-me.png' alt="Profile picture" />
                     </div>
                 </div>
                 <div className={`text-black bg-red mt-5 md:mt-0 py-5 lg:pt-24 md:pb-8 px-5 relative place-self-center rounded-xl ${isVisible ? 'animate-fade-left' : ''} animate-duration-800 animate-delay-200`}>

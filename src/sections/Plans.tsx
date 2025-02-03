@@ -1,5 +1,4 @@
 import { planes } from '../data/plans.data'
-import checkBlackIcon from '../assets/icons/cheque-black.png'
 import { LinkPrimaryFakeOutline } from '../components/ui';
 import Slider from 'react-slick';
 import { useIntersectionAnimation } from '../hooks';
@@ -76,13 +75,6 @@ export const Plans = () => {
                                         <div className='align-kit-center my-2'>
                                             <hr className='w-[70%]' />
                                         </div>
-                                        {/* <div className='flex justify-center'>
-                                            <h2 className='font-light'>{priceText}</h2>
-                                            <span className='ml-4 text-3xl font-bold'>{price}</span>
-                                        </div>
-                                        <div className='align-kit-center my-2'>
-                                            <hr className='w-[70%]' />
-                                        </div> */}
                                         <div className='flex flex-col mt-4 italic'>
                                             <span>Entrega: {timeReady}</span>
                                             <span>Soporte: {support}</span>
@@ -93,7 +85,7 @@ export const Plans = () => {
                                             {
                                                 benefitsList.map((benefit, index) => (
                                                     <div key={index} className='flex gap-2 items-start'>
-                                                        <img className='mt-1' width="16" height="16" src={checkBlackIcon} alt="Icono de lista" />
+                                                        <img className='mt-1' width="16" height="16" src='/assets/icons/cheque-black.png' alt="Icono de lista" />
                                                         <li className='text-t2-dark-silver'> {benefit} </li>
                                                     </div>
                                                 ))

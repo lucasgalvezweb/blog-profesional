@@ -1,14 +1,14 @@
-import webDevelopment from '../assets/images/web-development.webp'
+/* import webDevelopment from '../assets/images/web-development.webp'
 import uxResearch from '../assets/images/ux-research.webp'
 import digitalMarketing from '../assets/images/digital-marketing.webp'
 import tiConsulting from '../assets/images/ti-consulting.webp'
 import softwareDevelopment from '../assets/images/software-development.webp'
 import graphicDesign from '../assets/images/graphic-design.webp'
-import dashboard from '../assets/images/dashboard.webp'
+import dashboard from '../assets/images/dashboard.webp' */
 
 export const servicesList = [
     {
-        imageRoute: webDevelopment,
+        imageRoute: '/assets/images/web-development.webp',
         span: 'Pongamos tu negocio donde cualquier lo pueda encontrar',
         name: 'Tu negocio en linea atendiendo las 24h',
         botonText: 'Cotizar',
@@ -19,7 +19,7 @@ export const servicesList = [
         wpMessage: 'Hola Lucas, quiero cotizar mi página web'
     },
     {
-        imageRoute: uxResearch,
+        imageRoute: '/assets/images/ux-research.webp',
         span: 'Diseñalos sabiendo la verdad detrás de sus necesidades inconcientes',
         name: 'Crea los productos que tus usuarios necesitan',
         botonText: 'Conocer más',
@@ -30,7 +30,7 @@ export const servicesList = [
         wpMessage: 'Hola Lucas, quiero un UX/UI research de mis usuarios'
     },
     {
-        imageRoute: digitalMarketing,
+        imageRoute: '/assets/images/digital-marketing.webp',
         span: 'Aumente su popularidad con estrategias de marketing',
         name: 'Convierte posibles clientes en contactos de tu marca',
         botonText: 'Quiero saber cómo',
@@ -41,7 +41,7 @@ export const servicesList = [
         wpMessage: 'Hola Lucas, quiero que mi marca sea más popular'
     },
     {
-        imageRoute: tiConsulting,
+        imageRoute: '/assets/images/ti-consulting.webp',
         span: 'Te guiamos al elegir proveedor para ese proyecto importante',
         name: 'Asesorate al contratar un proveedor de tecnología',
         botonText: 'Quiero asesoria',
@@ -52,7 +52,7 @@ export const servicesList = [
         wpMessage: 'Hola Lucas, quiero asesoria porque voy a contratar a un tercero'
     },
     {
-        imageRoute: softwareDevelopment,
+        imageRoute: '/assets/images/software-development.webp',
         span: 'Administra todo desde un sistema de gestión comercial hecho a medida',
         name: 'Necesitas un sistema de gestión para crecer',
         botonText: 'Conocer más',
@@ -63,7 +63,7 @@ export const servicesList = [
         wpMessage: 'Hola Lucas, quiero cotizar un sistema de gestion empresarial, ERP o CRM'
     },
     {
-        imageRoute: graphicDesign,
+        imageRoute: '/assets/images/graphic-design.webp',
         span: 'Que tu marca llame la atención de tus clientes y quede en su memoria',
         name: 'Publicita tu producto en las redes sociales',
         botonText: 'Quiero saber cómo',
@@ -74,7 +74,7 @@ export const servicesList = [
         wpMessage: 'Hola Lucas, quiero llamar la atención en RRSS con mi producto'
     },
     {
-        imageRoute: dashboard,
+        imageRoute: '/assets/images/dashboard.webp',
         span: 'Los datos hablan, solo hay que ordenarlos y crear la historia',
         name: 'Para saber todo lo que pasa en tu negocio',
         botonText: 'Conoce cómo',

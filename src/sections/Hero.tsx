@@ -20,12 +20,12 @@ export const Hero = () => {
                     <p className='font-light text-white text-xl lg:my-6 rounded-md py-4'>¿Quieres hacer tu página web y no sabes por donde empezar? <span className='font-normal'>Estás en el lugar correcto</span>. Soy Desarrollador Web, me especializo en la <span className='text-[#f49c24] font-normal'>creación de páginas web enfocadas en conversión de posibles clientes.</span></p>
                     <div className='lg:mt-8'>
                         <a href={`https://wa.me/${global.phone}/?text=${global.wpMessage}`} target='_blank'>
-                            {/* <LinkPrimaryFake textColor="black" lgWidth='lg:w-48' text="Cotizar" bgColor='[#f49c24]' /> */}
+                            <LinkPrimaryFake textColor="black" lgWidth='lg:w-48' text="Cotizar" bgColor='[#f49c24]' />
                         </a>
                     </div>
                 </div>
                 <div className='place-self-center'>
-                    {/* <img className='img-profile aspect-[9/12]' width="500" height="auto" src={profilePicBg} alt="" /> */}
+                    <img className='img-profile aspect-[9/12]' width="500" height="auto" src='/assets/images/profile-pic-bg.png' alt="" />
                 </div>
             </div>
         </section>

@@ -1,8 +1,21 @@
-export const listMenu = [
+export interface listMenuItem {
+    name: string;
+    route: string;
+    scrollTo: string;
+    isShown: boolean;
+}
+
+export const listMenu:listMenuItem[] = [
     {
         name: 'Inicio',
         route: '',
         scrollTo: "hero",
+        isShown: true
+    },
+    {
+        name: 'Blog',
+        route: '/blog',
+        scrollTo: '',
         isShown: true
     },
     {
@@ -38,8 +51,8 @@ export const listMenu = [
     {
         name: 'Mini Apps',
         route: '/miniapps',
-        scrollTo: null,
-        isShown: true
+        scrollTo: '',
+        isShown: false
     }
-    
+
 ]

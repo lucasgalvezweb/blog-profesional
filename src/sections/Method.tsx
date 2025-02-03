@@ -1,3 +1,4 @@
+
 import { methodList } from '../data/method.data'
 import { useIntersectionAnimation } from '../hooks'
 import Slider from 'react-slick';

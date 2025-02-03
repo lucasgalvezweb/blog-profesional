@@ -1,8 +1,19 @@
 import { LinkPrimary } from "./LinkPrimary"
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { LinkPrimaryFake } from "./LinkPrimaryFake";
 
-export const CardItem = ({
+interface CardItemInt {
+    name: string;
+    background: string;
+    imageRoute: string;
+    span: string;
+    botonText: string;
+    redirectTo: string;
+    animationStyle: string;
+    target: boolean;
+}
+
+export const CardItem:React.FC<CardItemInt> = ({
     name,
     background = "cc-fourth",
     imageRoute,
@@ -13,9 +24,10 @@ export const CardItem = ({
     target = false
 }) => {
 
-    const [width, setWidth] = useState(window.innerWidth);
+    const [width, setWidth] = useState<number>(0);
 
     useEffect(() => {
+
         const handleResize = () => {
             setWidth(window.innerWidth);
         };
@@ -45,7 +57,6 @@ export const CardItem = ({
                     </a> :
                     <LinkPrimary text={botonText} redirectTo={redirectTo} />
             }
-
         </div>
     )
 }
