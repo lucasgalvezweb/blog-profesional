@@ -1,4 +1,4 @@
-import { useIntersectionAnimation } from '../hooks'
+import { useIntersectionAnimation } from '../hooks/useIntersectionAnimation'
 import { LinkPrimaryFake } from '../components/ui'
 import { global } from '../helpers/globalText'
 import profilePicBg from '../../assets/images/profile-pic-bg.png'

@@ -1,6 +1,6 @@
 
 import { methodList } from '../data/method.data'
-import { useIntersectionAnimation } from '../hooks'
+import { useIntersectionAnimation } from '../hooks/useIntersectionAnimation'
 import Slider from 'react-slick';
 
 export const Method = () => {

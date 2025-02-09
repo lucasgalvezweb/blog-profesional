@@ -4,13 +4,13 @@ import { LinkPrimaryFake } from "./LinkPrimaryFake";
 
 interface CardItemInt {
     name: string;
-    background: string;
+    background?: string;
     imageRoute: string;
     span: string;
     botonText: string;
     redirectTo: string;
-    animationStyle: string;
-    target: boolean;
+    animationStyle?: string;
+    target?: boolean;
 }
 
 export const CardItem:React.FC<CardItemInt> = ({

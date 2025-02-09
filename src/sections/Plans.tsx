@@ -1,7 +1,7 @@
 import { planes } from '../data/plans.data'
 import { LinkPrimaryFakeOutline } from '../components/ui';
 import Slider from 'react-slick';
-import { useIntersectionAnimation } from '../hooks';
+import { useIntersectionAnimation } from '../hooks/useIntersectionAnimation';
 import { global } from '../helpers/globalText';
 
 export const Plans = () => {

@@ -25,12 +25,14 @@ export const getStaticProps: GetStaticProps<PostPageProps> = async ({ params }) 
 
 const PostPage = ({ post }: PostPageProps) => (
     <>
-        <Link href="/blog">Blog</Link>
-        <article>
-            <h1>{ post.title }</h1>
-            <p> { post.date } </p>
-            <div dangerouslySetInnerHTML={{ __html: post.contentHTML }} />
-        </article>
+        <div className="px-14">
+            <Link href="/blog">Blog</Link>
+            <article>
+                <h1>{post.title}</h1>
+                <p> {post.date} </p>
+                <div dangerouslySetInnerHTML={{ __html: post.contentHTML }} />
+            </article>
+        </div>
     </>
 );
 

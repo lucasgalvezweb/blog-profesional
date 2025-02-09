@@ -16,7 +16,7 @@ export const listMenu:listMenuItem[] = [
         name: 'Blog',
         route: '/blog',
         scrollTo: '',
-        isShown: true
+        isShown: false
     },
     {
         name: 'Porqué trabajar conmigo',

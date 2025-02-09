@@ -1,5 +1,5 @@
 import React from 'react'
-import { useIntersectionAnimation } from '../hooks'
+import { useIntersectionAnimation } from '../hooks/useIntersectionAnimation'
 import { global } from '../helpers/globalText'
 import { LinkPrimaryFake } from '../components/ui'
 import { workwithmedata } from '../data/workwithme.data'

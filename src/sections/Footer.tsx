@@ -1,7 +1,7 @@
 import { global } from '../helpers/globalText'
 import { time } from '../helpers/helpful'
 import { appsMenuList, servicesList } from '../data'
-import { useIntersectionAnimation } from '../hooks'
+import { useIntersectionAnimation } from '../hooks/useIntersectionAnimation'
 import Link from 'next/link'
 
 export const Footer = () => {

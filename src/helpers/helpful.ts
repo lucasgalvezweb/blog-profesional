@@ -27,6 +27,6 @@ export const customTimeText = {
 }
 
 export const getAge = (birthyear: number) => {
-    const age = (time.year - birthyear)-1
+    const age = (time.year - birthyear)-1;
     return age
 }

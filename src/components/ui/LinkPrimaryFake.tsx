@@ -2,8 +2,8 @@ import React from 'react'
 
 interface LinkPrimaryFakeProps {
     text: string;
-    textColor: string;
-    bgColor: string;
+    textColor?: string;
+    bgColor?: string;
     hoverTextColor?: string;
     hoverBgColor?: string;
     lgWidth?: string;

@@ -1,6 +1,6 @@
 import React from 'react'
 import { global } from '../helpers/globalText'
-import { useIntersectionAnimation } from '../hooks'
+import { useIntersectionAnimation } from '../hooks/useIntersectionAnimation'
 
 export const AboutMe = () => {
 

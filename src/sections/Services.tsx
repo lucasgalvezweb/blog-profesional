@@ -4,7 +4,7 @@ import { CardItem } from '../components/ui/CardItem'
 
 import Slider from "react-slick";
 import { global } from '../helpers/globalText';
-import { useIntersectionAnimation } from '../hooks';
+import { useIntersectionAnimation } from '../hooks/useIntersectionAnimation';
 
 export const Services = () => {
 

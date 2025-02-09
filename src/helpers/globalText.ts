@@ -1,6 +1,21 @@
 import { getAge } from "./helpful";
 
-export const global = {
+interface GlobalData {
+    companyName: string;
+    siteSlogan: string;
+    wpMessage: string;
+    siteURL: string;
+    mail: string;
+    phone: string;
+    logoRoute: string;
+    birthdate: string;
+    workingSince: number;
+    workingYears: number;
+    birthyear: number;
+    age: number;
+  }
+
+export const global:GlobalData = {
     companyName: "Lucas Galvez Desarrollador Web",
     siteSlogan: "Lucas Galvez Desarrollador Web",
     wpMessage: "Hola Lucas, quiero cotizar un proyecto web",
